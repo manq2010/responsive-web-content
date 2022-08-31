@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <nav id="top">
+        <a href='#'>Home</a>
+        <a href='#'>About Us</a>
+        <a href='#'>whatever</a>
+    </nav>
+
+    <div id="a">
+        <div class="container">
+            <h1>some text here</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda nesciunt sequi aliquid expedita
+                corporis itaque inventore similique quidem necessitatibus autem, officiis dicta, maiores facilis
+                veritatis labore repudiandae, totam quam eaque.</p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, amet? Facere, sed obcaecati nihil in
+                culpa repellat quasi neque laborum sunt veritatis numquam praesentium ex corrupti molestiae fuga
+                dignissimos nostrum.
+                Et rem dolores dolor deserunt sit dolorum placeat ullam perferendis deleniti! Quisquam, ad, ratione
+                alias eius nobis fugit animi doloribus iure, libero ab perferendis dolorem numquam at ex excepturi iste!
+                Cumque, quibusdam dolorum. Quod repellendus repellat laborum tenetur? Sint, aspernatur. Fuga eligendi
+                expedita maxime assumenda incidunt cupiditate molestias accusamus similique animi, repellendus optio
+                blanditiis atque ipsa? Et suscipit doloremque placeat?
+                Maiores animi eos provident iste fugit quasi tempora et quas magni nisi, saepe, esse veritatis
+                temporibus error facere voluptas dolorem fuga rerum eveniet numquam necessitatibus quia molestiae.
+                Molestiae, cumque. Temporibus.
+            </p>
+            <p>Porro iusto debitis aliquam eligendi incidunt recusandae, reiciendis magni excepturi eaque beatae
+                accusamus animi quidem quia unde? Impedit, suscipit eaque nobis, consequuntur laudantium exercitationem,
+                maiores ad totam ipsam tempore optio.</p>
+        </div>
+    </div>
+    <div id="b">
+        <div class="container">
+            <h2>some text here</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda nesciunt sequi aliquid expedita
+                corporis itaque inventore similique quidem necessitatibus autem, officiis dicta, maiores facilis
+                veritatis labore repudiandae, totam quam eaque.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda nesciunt sequi aliquid expedita
+                corporis itaque inventore similique quidem necessitatibus autem, officiis dicta, maiores facilis
+                veritatis labore repudiandae, totam quam eaque.</p>
+        </div>
+    </div>
+    <div id="c">
+        <div class="container">
+            <h2>some text here</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda nesciunt sequi aliquid expedita
+                corporis itaque inventore similique quidem necessitatibus autem, officiis dicta, maiores facilis
+                veritatis labore repudiandae, totam quam eaque.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+    </div>
+
+    <br><br>
+
+    <header>my cool site</header>
+    <main>
+        <aside>
+          <ul>
+            <li>link-one</li>
+            <li>link-two</li>
+            <li>link-three</li>
+          </ul>
+        </aside>
+        <div class="content">
+          <section>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, consequuntur neque modi blanditiis, cumque voluptatem facere veritatis fuga itaque, sed placeat ab necessitatibus? Sequi alias perferendis numquam facere, veritatis officia?</section>
+          <section>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt repudiandae repellat quia fugiat asperiores! Laudantium enim distinctio ipsam sapiente exercitationem voluptatum vel aperiam a. Obcaecati qui itaque aliquam tempore eaque?</section>
+        </div>
+      </main>
+      <footer>footer content goes here!</footer>
+
+    <script>
+
+        let timeoutId = null;
+        const documentHeight = () => {
+            clearTimeout(timeoutId); // avoid execution of previous timeouts
+            timeoutId = setTimeout(() => {
+                const doc = document.documentElement;
+                doc.style.setProperty('--doc-height', `${window.innerHeight}px`)
+            }, 200);
+        };
+        window.addEventListener(`resize`, documentHeight);
+        documentHeight();
+
+    </script>
+
+</body>
+
+</html>
